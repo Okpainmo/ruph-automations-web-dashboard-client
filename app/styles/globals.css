@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+html {
+  @apply bg-gray-300;
+}
+
+@layer utilities {
+  .nunito_sans {
+    font-family: var(--font-nunito_sans);
+  }
+
+  .poppins {
+    font-family: var(--font-poppins);
+  }
+}
