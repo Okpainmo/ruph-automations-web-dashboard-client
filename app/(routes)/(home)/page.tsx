@@ -95,6 +95,9 @@ export default function DashboardHome() {
                   <p className='text-sm text-gray-600 mb-1'>
                     <span className='font-medium'>ID:</span> {sys.controllerId}
                   </p>
+                  <p className='text-sm text-gray-600 mb-1'>
+                    <span className='font-medium'>Batch ID:</span> {sys.id}
+                  </p>
                   <p className='text-sm text-gray-600 mb-2'>
                     <span className='font-medium'>Owner:</span> {sys.ownerEmail}
                   </p>
