@@ -5,8 +5,8 @@ import { Toaster } from 'react-hot-toast';
 import { RTKProvider } from '@/app/rtk-base/provider';
 
 export const metadata: Metadata = {
-  title: 'Xento: The DEX platform that grows with you',
-  description: 'The DEX platform that grows with you',
+  title: 'Ruph Automations: Admin Dashboard',
+  description: 'Ruph Automations: Admin Dashboard',
 };
 
 export default function RootLayout({

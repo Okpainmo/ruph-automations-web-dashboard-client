@@ -2,10 +2,12 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 type UIState = {
   isRegisterOverlayOpen: boolean;
+  isUpdateOverlayOpen: boolean;
 };
 
 const initialState: UIState = {
   isRegisterOverlayOpen: false,
+  isUpdateOverlayOpen: false,
 };
 
 const uiSlice = createSlice({
@@ -21,11 +23,26 @@ const uiSlice = createSlice({
     setRegisterOverlay(state, action: PayloadAction<boolean>) {
       state.isRegisterOverlayOpen = action.payload;
     },
+    openUpdateOverlay(state) {
+      state.isUpdateOverlayOpen = true;
+    },
+    closeUpdateOverlay(state) {
+      state.isUpdateOverlayOpen = false;
+    },
+    setUpdateOverlay(state, action: PayloadAction<boolean>) {
+      state.isUpdateOverlayOpen = action.payload;
+    },
   },
 });
 
-export const { openRegisterOverlay, closeRegisterOverlay, setRegisterOverlay } =
-  uiSlice.actions;
+export const {
+  openRegisterOverlay,
+  closeRegisterOverlay,
+  setRegisterOverlay,
+  openUpdateOverlay,
+  closeUpdateOverlay,
+  setUpdateOverlay,
+} = uiSlice.actions;
 
 export default uiSlice.reducer;
 
