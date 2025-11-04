@@ -106,25 +106,25 @@ export default function DashboardHome() {
                     <div className='relative pl-6 py-1 before:content-[""] before:absolute before:left-0 before:top-1.5 before:w-3 before:h-3 before:rounded-md before:bg-linear-to-br before:from-blue-500 before:to-blue-700 before:ring-2 before:ring-blue-200 rounded'>
                       <span className='font-semibold mr-1'>Relay 1:</span>
                       <span className='text-gray-600'>
-                        {sys.circuitEndPoint_1}
+                        {sys.circuitEndPoint_1.slice(0, 25)}...
                       </span>
                     </div>
                     <div className='relative pl-6 py-1 before:content-[""] before:absolute before:left-0 before:top-1.5 before:w-3 before:h-3 before:rounded-md before:bg-linear-to-br before:from-emerald-500 before:to-emerald-700 before:ring-2 before:ring-emerald-200 rounded'>
                       <span className='font-semibold mr-1'>Relay 2:</span>
                       <span className='text-gray-600'>
-                        {sys.circuitEndPoint_2}
+                        {sys.circuitEndPoint_2.slice(0, 25)}...
                       </span>
                     </div>
                     <div className='relative pl-6 py-1 before:content-[""] before:absolute before:left-0 before:top-1.5 before:w-3 before:h-3 before:rounded-md before:bg-linear-to-br before:from-amber-500 before:to-amber-700 before:ring-2 before:ring-amber-200 rounded'>
                       <span className='font-semibold mr-1'>Relay 3:</span>
                       <span className='text-gray-600'>
-                        {sys.circuitEndPoint_3}
+                        {sys.circuitEndPoint_3.slice(0, 25)}...
                       </span>
                     </div>
                     <div className='relative pl-6 py-1 before:content-[""] before:absolute before:left-0 before:top-1.5 before:w-3 before:h-3 before:rounded-md before:bg-linear-to-br before:from-fuchsia-500 before:to-fuchsia-700 before:ring-2 before:ring-fuchsia-200 rounded'>
                       <span className='font-semibold mr-1'>Relay 4:</span>
                       <span className='text-gray-600'>
-                        {sys.circuitEndPoint_4}
+                        {sys.circuitEndPoint_4.slice(0, 25)}...
                       </span>
                     </div>
                   </div>
