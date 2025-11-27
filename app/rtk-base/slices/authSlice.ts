@@ -76,7 +76,7 @@ export const handleLogin = createAsyncThunk(
 
       const response = await axiosInstance.post(loginUrl, loginData);
 
-      console.log(response);
+      // console.log(response);
 
       const { accessToken, refreshToken, userProfile } = response.data.response;
 
@@ -92,12 +92,12 @@ export const handleLogin = createAsyncThunk(
       );
 
       toast.dismiss(loadingId);
-      console.log(userProfile);
+      // console.log(userProfile);
 
       return response;
     } catch (error) {
       // Check if `error` is an AxiosError
-      console.log(error);
+      // console.log(error);
 
       toast.dismiss();
       const errorMessage =

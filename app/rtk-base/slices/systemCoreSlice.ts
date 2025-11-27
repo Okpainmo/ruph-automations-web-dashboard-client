@@ -49,7 +49,7 @@ export const fetchAllControllers = createAsyncThunk(
 
       const response = await axiosInstance.get(fetchUrl);
 
-      console.log(response);
+      // console.log(response);
 
       const controllers = response.data.response.systems || [];
 
@@ -93,7 +93,7 @@ export const registerController = createAsyncThunk(
 
       const response = await axiosInstance.post(registerUrl, registerData);
 
-      console.log(response);
+      // console.log(response);
 
       const newController = response.data.response;
 
